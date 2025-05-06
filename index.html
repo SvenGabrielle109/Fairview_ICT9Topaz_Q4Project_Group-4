@@ -9,55 +9,55 @@
 		body{
 			background: linear-gradient(blue,green);
 			color: white;
-      overflow-x: hidden;
+     			overflow-x: hidden;
 		}
 
 		.nav-item {
-      font-weight: bold;
-    }
+      			font-weight: bold;
+    		}
 
-    .navbar-nav .dropdown-menu {
-      position: absolute;
-      top: 100%;
-      margin-right: 15px;
-    }
+   		 .navbar-nav .dropdown-menu {
+      			position: absolute;
+      			top: 100%;
+      			margin-right: 15px;
+   	 	}
 
-    .nav-item:hover {
-      text-decoration: underline;
-    }
+    		.nav-item:hover {
+    			text-decoration: underline;
+    		}
 
-    .search-bar {
-      margin: auto;
-      width: 300px;
-    }
+    		.search-bar {
+      			margin: auto;
+      			width: 300px;
+    		}
 
-    table {
-      width: 300%;
-      border-collapse: collapse;
-    }
+    		table {
+      			width: 300%;
+      			border-collapse: collapse;
+    		}
 
 		th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      width: auto;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      color: white
-    }
+      			border: 1px solid #ddd;
+      			padding: 8px;
+      			width: auto;
+      			white-space: nowrap;
+      			overflow: hidden;
+      			text-overflow: ellipsis;
+      			color: white
+    		}
 
-    .profile{
-    	float: right;
-    }
+    		.profile{
+    			float: right;
+   		}
 
-    .title{
-    	background-color: lightseagreen;
-    	padding: 20px;
-      text-align: center;
-      font-size: 1.5em;
-    }
+    		.title{
+    			background-color: lightseagreen;
+    			padding: 20px;
+      			text-align: center;
+     			font-size: 1.5em;
+   		}
 
-    .container{
+    		.container{
 			display: flex;
 		}
 
@@ -74,6 +74,7 @@
 			background: linear-gradient(lightseagreen,skyblue);
 			color: white;
 			font-weight: bold;
+			text-align: center;
 		}
 
 		footer{
@@ -85,7 +86,7 @@
 			text-align: justify;
 		}
 
-		ul,li{
+		.projects ul,li{
 			font-size: 13.5px;
 			color: black;
 			text-align: left;
@@ -96,17 +97,8 @@
 			color: black;
 			text-align: left;
 		}
-
-		#display,#display2,#display3{
-			color: darkslateblue;
-		}
-
-		#showcase,#showcase2,#showcase3,#showcase4,#showcase5,#showcase6,#showcase7{
-			color: darkslateblue;
-		}
 	</style>
 </head>
-
 <body>
 	<section class="title">
 		<h1 style="text-align: center;">My Group Project</h1>
@@ -129,7 +121,7 @@
             <a class="dropdown-item" href="" target="_blank">Quarter One</a>
             <a class="dropdown-item" href="" target="_blank">Quarter Two</a>
             <a class="dropdown-item" href="" target="_blank">Quarter Third</a>
-            <a class="dropdown-item" href="index.html" target="_blank">Quarter Fourth</a>
+            <a class="dropdown-item" href="index.html" target="_self">Quarter Fourth</a>
           </div>
         </li>
       </ul>
@@ -197,79 +189,87 @@
 		<br>
 
 		<div class="col-md-6">
-			<section class="projects">
-				<div class="col-md-5">
-					<h2 class="project_title">Quarterly Projects</h2>
-				</div>
-				
-				<br>
-
-				<div class="col-md-4">
-					<details>
-						<summary>1st Quarter</summary>
-							<p>We learned how to make a simple website. And we also learned how to design our website by using CSS.</p>
-							<img src="">
-					</details>
-
+			<center>
+				<section class="projects">
+					<center>
+						<div class="col-md-5">
+							<h2 class="project_title">Quarterly Projects</h2>
+						</div>
+					</center>	
+			
 					<br>
 
-					<details>
-						<summary>2nd Quarter</summary>
-							<p>We learned how to make a table in a website, and even designing it.</p>
-							<img src="">
-					</details>
+					<div class="col-md-4">
+						<details>
+							<summary>1st Quarter</summary>
+								<p>We learned how to make a simple website. And we also learned how to design our website by using CSS.</p>
+								<img src="">
+						</details>
 
-					<br>	
+						<br>
 
-					<details>
-						<summary>3rd Quarter</summary>
-							<p>We learned about to use Javascript. In this quarter, we learned only learned how to use Arithmetics, Logical, and Comparison operators.</p>
+						<details>
+							<summary>2nd Quarter</summary>
+								<p>We learned how to make a table in a website, and even designing it.</p>
+								<img src="">
+						</details>
 
-							<img src="">
+						<br>	
 
-							<br>
+						<details ontoggle="Mathemic_Operators()">
+							<summary>3rd Quarter</summary>
+								<p>We learned about to use Javascript. In this quarter, we learned only learned how to use Arithmetics, Logical, and Comparison operators.</p>
+
+								<img src="">
+
+								<br>
 							
-							<label>Here are examples of the mathematical operators</label>
-							<ul>
-								<li><p id="display"></p></li>
-								<li><p id="display2"></p></li>
-								<li><p id="display3"></p></li>
-							</ul>
-					</details>
-
-					<br>
-
-					<details>
-						<summary>4th Quarter</summary>
-							<p>We learned how to use Math.methods, Conditional Statements</p>
-							<img src="">
+								<label>Here are examples of the mathematical operators</label>
+								<ul>
+										<li id="display"></li>
+										<li id="display2"></li>
+										<li id="display3"></li>
+									</ul>
+							</details>
 
 							<br>
 
-							<label>Here are examples of the Math.methods operators</label>
-							<ul>
-								<li><p id="showcase"></p></li>
-								<li><p id="showcase2"></p></li>
-								<li><p id="showcase3"></p></li>
-								<li><p id="showcase4"></p></li>
-								<li><p id="showcase5"></p></li>
-								<li><p id="showcase6"></p></li>
-								<li><p id="showcase7"></p></li>
-							</ul>
-					</details>
-				</div>
-			</section>
+							<details ontoggle="Mathemic_Methods()">
+								<summary>4th Quarter</summary>
+									<p>We learned how to use Math.methods, Conditional Statements</p>
+									<img src="">
+
+									<br>
+
+									<label>Here are examples of the Math.methods operators</label>
+									<ul>
+										<li id="show"><</li>
+										<li id="show2"></li>
+										<li id="show3"></li>
+									</ul>
+
+									<label>Here are examples of Conditional Statements</label>
+									<ul>
+										<li>Example of Switch statement of cupcake: <p id="cases"></p></li>
+										<li>Example of If, Else if, and Else statement of the day: <p id="day"></p></li>
+									</ul>
+							</details>
+						</div>
+					</section>
+				</center>
 		</div>
 
 		<br> 
 	
-		<section class="footer">
-			<footer>
-				<p>For any inquiries, don't hesitate to contact us on email.</p>
-				<p>O.B. Montessori</p>
-				<footer>@Gabrielle L. Damondamon</footer>
-			</footer>
-		</section>
+		<center>
+			<section class="footer">
+				<footer>
+					<p>For any inquiries, don't hesitate to contact us on email.</p>
+					<p>O.B. Montessori</p>
+					<footer>@Gabrielle L. Damondamon</footer>
+				</footer>
+			</section>
+		</center>
 	</center>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -277,33 +277,63 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script>
-  		/*This is to showcase an example of simple Javascript and mathematical operators*/
+		//This to showcase examples of Mathematical Operators
 
-  		let ans = 5 < 3;
-  		let ans2 = ((23 == (13 + 10)) || 15 < 25);
-  		let ans3 = 11 + 11/2;
+		let ans = 12 <= 12;
+  	let ans2 = (((25 - 35)  == (13 + 10)) || 15 + 25 >= 30);
+  	let ans3 = Math.round(15 + 22/15);
 
-  		document.getElementById('display').innerHTML = "Example of Comparison Operator: " + "is 5 > 3? " + ans; //The answer is false
-  		document.getElementById('display2').innerHTML = "Example of Logical Operator: " + "is 23 equal to the parenthesis of 13 plus 10 and 15 is lesser than 25? " + ans2; //The answer is true
-  		document.getElementById('display3').innerHTML = "Example of Arithmetic Operator: " + "what the answer of 11 plus 11 divided by 2? " + ans3; //The answer is 216.5
+  	document.getElementById('display').innerHTML = "Example of Comparison Operator: " + "is 12 less than or equal to 12 " + ans; //The answer is true
+  	document.getElementById('display2').innerHTML = "Example of Logical Operator: " + "is 23 equal to the parenthesis of 13 plus 10 and 15 is lesser than 25? " + ans2; //The answer is false
+ 		document.getElementById('display3').innerHTML = "Example of Arithmetic Operator: " + "what the answer of 11 plus 11 divided by 2? " + ans3; //The answer is 16.47
+  
+  	//This to showcase examples of Math.methdos
 
-  		/*This is to showcase an example of using Math.methods*/
- 
-  		let elem = Math.pow(20);
-  		let elem2 = Math.abs(-34);
-  		let elem3 = Math.min(,15,16,17,18,19,20,21,23,24,25);
-  		let elem4 = Math.max(20);
-  		let elem5 = Math.sqrt(10000);
-  		let elem6 = Math.random() * 10 + 1;
-  		let elem7 = Math.round(Math.sqrt(30));
+  	let elem = Math.pow(20,2);
+  	let elem2 = Math.sqrt(10000);
+  	let elem3 = Math.round(Math.sqrt(30));
 
-  		document.getElementById('showcase').innerHTML = "Example of Math.pow: " + "what is the square of 20? " + elem; //The answer is 400
-  		document.getElementById('showcase2').innerHTML = "Example of Math.abs: " + "what is the absolute value of -34" + elem2; //The answer is 34
-  		document.getElementById('showcase3').innerHTML = "Example of Math.min: " + "what is the minimum value of the range of 15 to 25? " + elem3; //The answer is 15
-			document.getElementById('showcase4').innerHTML = "Example of Math.max: " + "what is the maxium value of the range of 15 to 25? " + elem4; //The answer is 25
-  		document.getElementById('showcase5').innerHTML = "Example of Math.sqrt: " + "what is square root of 10000? " + elem5; //The answer is 100
-  		document.getElementById('showcase6').innerHTML = "Example of Math.random: " + "pick a random number from 1 to 10? " + elem6; 
-  		document.getElementById('showcase7').innerHTML = "Example of Math.random: " + "round off to the nearest hundredths of the square of 30? " + elem7; //The answer is 5.48
+  	document.getElementById('show').innerHTML = "Example of Math.pow: " + "what is the square of 20? " + elem; //The answer is 400//
+  	document.getElementById('show2').innerHTML = "Example of Math.sqrt: " + "what is square root of 10000? " + elem2; //The answer is 100//
+  	document.getElementById('show3').innerHTML = "Example of Math.random: " + "round off to the nearest hundredths of the square of 30? " + elem3; //The answer is 5.48
+
+  	//This to showcase examples of Conditional Statements 
+
+  	let dessert = "cupcake";
+
+  	switch (dessert){
+  		case "cupcake":
+  			document.getElementById('cases').innerHTML = "My favorite cupcake is Cheese Cupcakes.";
+  			break;
+  		case "cake":
+  			document.getElementById('cases').innerHTML = "My favorite cupcake is Chocolate Mousse.";
+  			break;
+  		default: 
+  			document.getElementById('cases').innerHTML = "I liked every dessert that I liked."
+  			break;
+  	}
+
+  	var day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+		const d = new Date();
+
+		var display = day[d.getDay()];
+
+		if (display == 'Sunday'){
+			document.getElementById("day").innerHTML = "Today is Sunday";
+		}else if (display == 'Monday'){
+			document.getElementById("day").innerHTML = "Today is Monday";
+		}else if (display == 'Tuesday'){
+			document.getElementById("day").innerHTML = "Today is Tuesday";
+		}else if (display == 'Wednesday'){
+			document.getElementById("day").innerHTML = "Today is Wednesday";
+		}else if (display == 'Thrusday'){
+			document.getElementById("day").innerHTML = "Today is Thursday";
+		}else if (display == 'Friday'){
+			document.getElementById("day").innerHTML = "Today is Friday";
+		}else if (display == 'Saturday'){
+			document.getElementById("day").innerHTML = "Today is Satuday";
+		}else{
+			document.getElementById("day").innerHTML = "Enjoy your day!";
+		}
   </script>
-</body>
-</html>
