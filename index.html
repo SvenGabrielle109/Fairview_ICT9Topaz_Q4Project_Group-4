@@ -9,55 +9,55 @@
 		body{
 			background: linear-gradient(blue,green);
 			color: white;
-     			overflow-x: hidden;
+      overflow-x: hidden;
 		}
 
 		.nav-item {
-      			font-weight: bold;
-    		}
+      font-weight: bold;
+    }
 
-   		 .navbar-nav .dropdown-menu {
-      			position: absolute;
-      			top: 100%;
-      			margin-right: 15px;
-   	 	}
+    .navbar-nav .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      margin-right: 15px;
+    }
 
-    		.nav-item:hover {
-    			text-decoration: underline;
-    		}
+    .nav-item:hover {
+      text-decoration: underline;
+    }
 
-    		.search-bar {
-      			margin: auto;
-      			width: 300px;
-    		}
+    .search-bar {
+      margin: auto;
+      width: 300px;
+    }
 
-    		table {
-      			width: 300%;
-      			border-collapse: collapse;
-    		}
+    table {
+      width: 300%;
+      border-collapse: collapse;
+    }
 
 		th, td {
-      			border: 1px solid #ddd;
-      			padding: 8px;
-      			width: auto;
-      			white-space: nowrap;
-      			overflow: hidden;
-      			text-overflow: ellipsis;
-      			color: white
-    		}
+      border: 1px solid #ddd;
+      padding: 8px;
+      width: auto;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: white
+    }
 
-    		.profile{
-    			float: right;
-   		}
+    .profile{
+    	float: right;
+    }
 
-    		.title{
-    			background-color: lightseagreen;
-    			padding: 20px;
-      			text-align: center;
-     			font-size: 1.5em;
-   		}
+    .title{
+    	background-color: lightseagreen;
+    	padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+    }
 
-    		.container{
+    .container{
 			display: flex;
 		}
 
@@ -96,6 +96,11 @@
 			font-size: 14.5px;
 			color: black;
 			text-align: left;
+		}
+
+		.sample{
+			width: 100%;
+			height: 100%;
 		}
 	</style>
 </head>
@@ -223,7 +228,8 @@
 								<img src="">
 
 								<br>
-							
+								
+								<img class="sample" src="Sample of simple Javascript operators.png">
 								<label>Here are examples of the mathematical operators</label>
 								<ul>
 										<li id="display"></li>
@@ -241,13 +247,18 @@
 
 									<br>
 
+									<img class="sample" src="Sample of Math Methods.png">
 									<label>Here are examples of the Math.methods operators</label>
 									<ul>
-										<li id="show"><</li>
+										<li id="show"></li>
 										<li id="show2"></li>
 										<li id="show3"></li>
 									</ul>
 
+									<br>
+
+									<img class="sample" src="Sample of Switch Statement.png">
+									<img class="sample" src="Sample of If Conditional Statements.png">
 									<label>Here are examples of Conditional Statements</label>
 									<ul>
 										<li>Example of Switch statement of cupcake: <p id="cases"></p></li>
@@ -277,15 +288,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script>
-	//This to showcase examples of Mathematical Operators
+		//This to showcase examples of Mathematical Operators
 
-	let ans = 12 <= 12;	
-	let ans2 = (((25 - 40)  == (13 + 10)) || 15 + 25 >= 30);
+		let ans = 12 <= 12;
+  	let ans2 = (((25 - 40)  == (13 + 10)) || 15 + 25 >= 30);
   	let ans3 = Math.round(15 + 22/15);
 
-  	document.getElementById('display').innerHTML = "Example of Comparison Operator: " + "is 12 less than or equal to 12 " + ans; //The answer is true
-  	document.getElementById('display2').innerHTML = "Example of Logical Operator: " + "is the parenthesis of 25 minus 40 is equal to the parenthesis of 13 plus 10 and 15 plus 25 is greater than or equal to 30" + ans2; //The answer is false
- 		document.getElementById('display3').innerHTML = "Example of Arithmetic Operator: " + "what the answer of 11 plus 11 divided by 2? " + ans3; //The answer is 16.47
+  	document.getElementById('display').innerHTML = "Example of Comparison Operator: " + "is 12 less than or equal to 12 " + ans; 
+  	document.getElementById('display2').innerHTML = "Example of Logical Operator: " + "is the parenthesis of 25 minus 40 is equal to the parenthesis of 13 plus 10 and 15 plus 25 is greater than or equal to 30" + ans2; 
+ 		document.getElementById('display3').innerHTML = "Example of Arithmetic Operator: " + "what the answer of 11 plus 11 divided by 2? " + ans3; 
   
   	//This to showcase examples of Math.methdos
 
@@ -293,9 +304,9 @@
   	let elem2 = Math.sqrt(10000);
   	let elem3 = Math.round(Math.sqrt(30));
 
-  	document.getElementById('show').innerHTML = "Example of Math.pow: " + "what is the square of 20? " + elem; //The answer is 400//
-  	document.getElementById('show2').innerHTML = "Example of Math.sqrt: " + "what is square root of 10000? " + elem2; //The answer is 100//
-  	document.getElementById('show3').innerHTML = "Example of Math.random: " + "round off to the nearest hundredths of the square of 30? " + elem3; //The answer is 5.48
+  	document.getElementById('show').innerHTML = "Example of Math.pow: " + "what is the square of 20? " + elem; 
+  	document.getElementById('show2').innerHTML = "Example of Math.sqrt: " + "what is square root of 10000? " + elem2; 
+  	document.getElementById('show3').innerHTML = "Example of Math.random: " + "round off to the nearest hundredths of the square of 30? " + elem3; 
 
   	//This to showcase examples of Conditional Statements 
 
@@ -337,3 +348,5 @@
 			document.getElementById("day").innerHTML = "Enjoy your day!";
 		}
   </script>
+</body>
+</html>
