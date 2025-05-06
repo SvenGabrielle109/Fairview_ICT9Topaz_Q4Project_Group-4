@@ -6,7 +6,104 @@
 	<title>Group#4 Project</title>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 	<style>
+		body{
+			background: linear-gradient(blue,green);
+			color: white;
+      overflow-x: hidden;
+		}
 
+		.nav-item {
+      font-weight: bold;
+    }
+
+    .navbar-nav .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      margin-right: 15px;
+    }
+
+    .nav-item:hover {
+      text-decoration: underline;
+    }
+
+    .search-bar {
+      margin: auto;
+      width: 300px;
+    }
+
+    table {
+      width: 300%;
+      border-collapse: collapse;
+    }
+
+		th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      width: auto;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: white
+    }
+
+    .profile{
+    	float: right;
+    }
+
+    .title{
+    	background-color: lightseagreen;
+    	padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .container{
+			display: flex;
+		}
+
+		.container1{
+			color: #c2eaff;
+			float: left;
+		}
+
+		.projects{
+			background-color: white;
+		}
+
+		h2,summary{
+			background: linear-gradient(lightseagreen,skyblue);
+			color: white;
+			font-weight: bold;
+		}
+
+		footer{
+			background-color: skyblue;
+		}
+
+		.projects p{
+			color: black;
+			text-align: justify;
+		}
+
+		ul,li{
+			font-size: 13.5px;
+			color: black;
+			text-align: left;
+		}
+
+		.projects label{
+			font-size: 14.5px;
+			color: black;
+			text-align: left;
+		}
+
+		#display,#display2,#display3{
+			color: darkslateblue;
+		}
+
+		#showcase,#showcase2,#showcase3,#showcase4,#showcase5,#showcase6,#showcase7{
+			color: darkslateblue;
+		}
 	</style>
 </head>
 
@@ -16,9 +113,28 @@
 	</section>
 
 
-	<nav>
-		
-	</nav>
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background: blue">
+    <input class="form-control search-bar" type="search" placeholder="Search...">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto d-flex justify-content-between">
+        <li class="nav-item active"><a class="nav-link" href="comment.html">About Us</a></li>
+        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="comment.html">Feedback</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown">Quarter</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="" target="_blank">Quarter One</a>
+            <a class="dropdown-item" href="" target="_blank">Quarter Two</a>
+            <a class="dropdown-item" href="" target="_blank">Quarter Third</a>
+            <a class="dropdown-item" href="index.html" target="_blank">Quarter Fourth</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <br>
 
@@ -31,17 +147,163 @@
   <br>
 
 	<center>
-		<section>
-			
+		<section class="body">
+			<div class="row">
+				<div class="col-md-6">
+					<center>
+						<section class="introduction">
+							<p></p>
+						</section>
+
+						<section class="cotainer">
+							<div class="container 1">
+								<img src="">
+							</div>
+						</section>
+						
+
+						<section class="profile">
+							<center>
+								<h2 style="text-align: center; width: 300%;">Profile Information</h2>
+							</center>
+							<table style="background: lightseagreen;">
+								<tr class="table table-primary">
+									<td style="text-align: center;">Name</td>
+									<td style="text-align: center;"></td>
+								</tr>
+
+								<tr style="background: lightseagreen;">
+									<td style="text-align: center;">Hobbies</td>
+									<td>
+										<ol>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ol>
+									</td>
+								</tr>
+
+								<tr style="background: lightseagreen;">
+									<td style="text-align: center;">Ambition</td>
+									<td style="text-align: center;"></td>
+								</tr>
+							</table>
+						</section>
+					</center>
+				</div>
+			</div>				
+		</section>
+
+		<br>
+
+		<div class="col-md-6">
+			<section class="projects">
+				<div class="col-md-5">
+					<h2 class="project_title">Quarterly Projects</h2>
+				</div>
+				
+				<br>
+
+				<div class="col-md-4">
+					<details>
+						<summary>1st Quarter</summary>
+							<p>We learned how to make a simple website. And we also learned how to design our website by using CSS.</p>
+							<img src="">
+					</details>
+
+					<br>
+
+					<details>
+						<summary>2nd Quarter</summary>
+							<p>We learned how to make a table in a website, and even designing it.</p>
+							<img src="">
+					</details>
+
+					<br>	
+
+					<details>
+						<summary>3rd Quarter</summary>
+							<p>We learned about to use Javascript. In this quarter, we learned only learned how to use Arithmetics, Logical, and Comparison operators.</p>
+
+							<img src="">
+
+							<br>
+							
+							<label>Here are examples of the mathematical operators</label>
+							<ul>
+								<li><p id="display"></p></li>
+								<li><p id="display2"></p></li>
+								<li><p id="display3"></p></li>
+							</ul>
+					</details>
+
+					<br>
+
+					<details>
+						<summary>4th Quarter</summary>
+							<p>We learned how to use Math.methods, Conditional Statements</p>
+							<img src="">
+
+							<br>
+
+							<label>Here are examples of the Math.methods operators</label>
+							<ul>
+								<li><p id="showcase"></p></li>
+								<li><p id="showcase2"></p></li>
+								<li><p id="showcase3"></p></li>
+								<li><p id="showcase4"></p></li>
+								<li><p id="showcase5"></p></li>
+								<li><p id="showcase6"></p></li>
+								<li><p id="showcase7"></p></li>
+							</ul>
+					</details>
+				</div>
+			</section>
+		</div>
+
+		<br> 
+	
+		<section class="footer">
+			<footer>
+				<p>For any inquiries, don't hesitate to contact us on email.</p>
+				<p>O.B. Montessori</p>
+				<footer>@Gabrielle L. Damondamon</footer>
+			</footer>
 		</section>
 	</center>
-
-	<br> 
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  
+  <script>
+  		/*This is to showcase an example of simple Javascript and mathematical operators*/
+
+  		let ans = 5 < 3;
+  		let ans2 = ((23 == (13 + 10)) || 15 < 25);
+  		let ans3 = 11 + 11/2;
+
+  		document.getElementById('display').innerHTML = "Example of Comparison Operator: " + "is 5 > 3? " + ans; //The answer is false
+  		document.getElementById('display2').innerHTML = "Example of Logical Operator: " + "is 23 equal to the parenthesis of 13 plus 10 and 15 is lesser than 25? " + ans2; //The answer is true
+  		document.getElementById('display3').innerHTML = "Example of Arithmetic Operator: " + "what the answer of 11 plus 11 divided by 2? " + ans3; //The answer is 216.5
+
+  		/*This is to showcase an example of using Math.methods*/
+ 
+  		let elem = Math.pow(20);
+  		let elem2 = Math.abs(-34);
+  		let elem3 = Math.min(,15,16,17,18,19,20,21,23,24,25);
+  		let elem4 = Math.max(20);
+  		let elem5 = Math.sqrt(10000);
+  		let elem6 = Math.random() * 10 + 1;
+  		let elem7 = Math.round(Math.sqrt(30));
+
+  		document.getElementById('showcase').innerHTML = "Example of Math.pow: " + "what is the square of 20? " + elem; //The answer is 400
+  		document.getElementById('showcase2').innerHTML = "Example of Math.abs: " + "what is the absolute value of -34" + elem2; //The answer is 34
+  		document.getElementById('showcase3').innerHTML = "Example of Math.min: " + "what is the minimum value of the range of 15 to 25? " + elem3; //The answer is 15
+			document.getElementById('showcase4').innerHTML = "Example of Math.max: " + "what is the maxium value of the range of 15 to 25? " + elem4; //The answer is 25
+  		document.getElementById('showcase5').innerHTML = "Example of Math.sqrt: " + "what is square root of 10000? " + elem5; //The answer is 100
+  		document.getElementById('showcase6').innerHTML = "Example of Math.random: " + "pick a random number from 1 to 10? " + elem6; 
+  		document.getElementById('showcase7').innerHTML = "Example of Math.random: " + "round off to the nearest hundredths of the square of 30? " + elem7; //The answer is 5.48
+  </script>
 </body>
 </html>
