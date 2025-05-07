@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Group#4 Project</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+	<style>
+		body{
+			background: linear-gradient(blue,green);
+			color: white;
+      		overflow-x: hidden;
+		}
+
+		.nav-item {
+      		font-weight: bold;
+    	}
+
+    	.navbar-nav .dropdown-menu {
+    	  position: absolute;
+    	  top: 100%;
+    	  margin-right: 15px;
+    	}
+
+   	 	.nav-item:hover {
+     		text-decoration: underline;
+    	}
+
+    	.search-bar {
+      		margin: auto;
+      		width: 300px;
+    	}
+
+    	table {
+    		width: 300%;
+    		border-collapse: collapse;
+    	}
+
+		th, td {
+			border: 1px solid #ddd;
+			padding: 8px;
+      		width: auto;
+      		white-space: nowrap;
+     		overflow: hidden;
+     		text-overflow: ellipsis;
+      		color: white
+    	}
+
+    	.title{
+    		background-color: lightseagreen;
+    		padding: 20px;
+      		text-align: center;
+      		font-size: 1.5em;
+    	}
+
+    	.form{
+    		text-align: left;
+    		background: white;
+    	}
+
+    	#name,#age,#mail{
+    		width: 90%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			box-sizing: border-box;
+    	}
+
+    	input[type=text],input[type=number]{
+    		text-align: center;
+    	}
+
+    	select{
+  			width: 90%;
+  			padding: 16px 20px;
+  			border: none;
+  			border-radius: 4px;
+  			background: linear-gradient(skyblue,lightseagreen);
+		}	
+	</style>
+</head>
+<body>
+	<section class="title">
+		<h1 style="text-align: center;">My Group Project</h1>
+	</section>
+
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background: blue">
+    	<input class="form-control search-bar" type="search" placeholder="Search...">
+    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      		<span class="navbar-toggler-icon"></span>
+    	</button>
+    	<div class="collapse navbar-collapse" id="navbarNav">
+      		<ul class="navbar-nav ml-auto d-flex justify-content-between">
+        		<li class="nav-item active"><a class="nav-link" href="comment.html">About Us</a></li>
+        		<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+        		<li class="nav-item active"><a class="nav-link" href="comment.html">Feedback</a></li>
+        		<li class="nav-item dropdown">
+          			<a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-toggle="dropdown">Quarter</a>
+          			<div class="dropdown-menu">
+            			<a class="dropdown-item" href="" target="_blank">Quarter One</a>
+            			<a class="dropdown-item" href="" target="_blank">Quarter Two</a>
+           				<a class="dropdown-item" href="" target="_blank">Quarter Third</a>
+            			<a class="dropdown-item" href="index.html" target="_blank">Quarter Fourth</a>
+         			 </div>
+        		</li>
+     		 </ul>
+    	</div>
+  	</nav>
+
+  	<br>
+
+  	<center>
+  		<section>
+  			<h2 style="font-family: 'Roboto Slab',serif; font-size: 50px;">Feedback</h2>
+  		</section>
+  	</center>
+
+  	<center>
+  		<div class="body">
+  			<div class="col-md-6">
+  				<div class="form-control">
+  					<section class="form">
+  						<form>
+	  						<center>
+	  							<p style="font-size: 30px; font-family: 'Cal Sans', sans-serif;">Personal Info</p>
+	  						</center>
+
+	  						<label for="name">Name: </label>
+	  							<input type="text" id="name" name="name" placeholder="Last Name, First Name, Middle Initial" >
+
+
+  							<label for="age">Age: </label>
+  								<input type="number" id="age" name="age" placeholder="Current Age">
+
+
+  							<label for="mail">Gmail: </label>
+  								<input type="text" id="mail" name="gmail" placeholder="example@gmail.com">
+  						</form>
+  					</section>
+				</div>
+
+				<br>
+
+				<div class="form-control">
+  					<section class="form">
+  						<form>
+  							<center>
+  								<details ontoggle="Details()">
+  									<summary style="font-size: 30px; font-family: 'Cal Sans', sans-serif;">Customer Feeback</summary>
+  										<i id="display"></i>
+  								</details>
+
+  								<p id="display1"></p>
+  							</center>
+
+  							<label for="rating_topic1">The Function of the Link: </label>
+  							<select class="form-control" id="1topic_1">
+  								<option value="Rate_1">Rate</option>
+                  				<option value="E">Excellent</option>
+                  				<option value="AS">Above Satisficatory</option>
+                  				<option value="S">Satfiscatory</option>
+                  				<option value="NI">Needs Improvement</option>
+                 				<option value="PP">Poor Performance</option>   
+                  				<option value="F">Failure</option>  
+  							</select>
+
+  							<br>
+
+  							<label for="rating_topic2">The Understanding the ICT Quarterly Lessons: </label>
+  							<select class="form-control" id="1topic_2" required>
+  								<option value="Rate_2">Rate</option>
+                  				<option value="E">Excellent</option>
+                  				<option value="AS">Above Satisficatory</option>
+                  				<option value="S">Satfiscatory</option>
+                  				<option value="NI">Needs Improvement</option>
+                 				<option value="PP">Poor Performance</option>   
+                  				<option value="F">Failure</option>  
+  							</select>
+
+  							<br>
+
+  							<label for="rating_topic3">The Satisfication from the Profilo Website: </label>
+  							<select class="form-control" id="1topic_3" required>
+  								<option value="Rate_3">Rate</option>
+                  				<option value="E">Excellent</option>
+                  				<option value="AS">Above Satisficatory</option>
+                  				<option value="S">Satfiscatory</option>
+                  				<option value="NI">Needs Improvement</option>
+                 				<option value="PP">Poor Performance</option>   
+                  				<option value="F">Failure</option>  
+  							</select>
+
+  							<br>
+
+  							<label for="rating_topic4">The Effectiveness of the Profilo Website: </label>
+  							<select class="form-control" id="1topic_4" required>
+  								<option value="Rate_4">Rate</option>
+                  				<option value="E">Excellent</option>
+                  				<option value="AS">Above Satisficatory</option>
+                  				<option value="S">Satfiscatory</option>
+                  				<option value="NI">Needs Improvement</option>
+                 				<option value="PP">Poor Performance</option>   
+                  				<option value="F">Failure</option>  
+  							</select>
+
+  							<br>
+
+  							<center>
+								<button class="btn btn-primary" onclick="Scoring()">See your Rate</button>
+							</center>
+  						</form>
+  					</section>
+  				</div>
+
+  				<br>
+
+  				<div class="form-control">
+  					<section class="form">
+  						<form>
+  							<center>
+  								<details ontoggle="Details2()">
+  									<summary style="font-size: 30px; font-family: 'Cal Sans', sans-serif;">Personal Feedback</summary>
+  										<i id="display2"> </i>
+  								</details>
+  							</center>
+
+  							<br>
+
+  							<label for="rating_topic5">Were there error of the Profolio Website</label> <br>
+  								<center>
+  									<textarea cols="69" rows="5" required placeholder="Don't hesitate to report any errors in the website."></textarea>
+  								</center>
+
+  							<br>
+							
+							<label for="rating_topic6">What are the reccomendations that you want to add</label>
+  								<center>
+  									<textarea cols="69" rows="5" required placeholder="Give at least 2 reccomendations."></textarea>
+  								</center>
+
+  							<br>
+
+  							<center>
+  								<button type="sumbit" class="btn btn-primary" onclick="Submit()">Submit your </button>
+  							</center>
+  						</form>
+
+  						<br>
+
+  						<form>
+  							<label for="rating_topic4">Which Quarterly Projects that find you more interesting?</label>
+  							<select class="form-control" id="topic_1" required>
+  								<option value="1Q">1st Quarter Project</option>
+                  				<option value="2Q">2nd Quarter Project</option>
+                  				<option value="3Q">3rd Quarter Project</option>
+  							</select>
+
+  							<br>
+
+							<center>
+								<button class="btn btn-primary" onclick="Scoring2()">See the description of each Quarterly Project</button>
+							</center>
+  						</form>
+  					</section>
+  				</div>
+  			</div>
+  			</div>
+  		</div>
+  	</center>
+
+  	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  	
+  	<script>
+  		function Details(){
+  			document.getElementById('display').innerHTML = "Please pick the appropriate rating" + "<strong>NOTE: </strong> The total rating will be powered up depending on the rate you choose"; //This will be the signal in case of no answer
+  		}
+
+  		function Details2(){
+  			document.getElementById('display2').innerHTML = "Please answer the following questions"; //This will be the signal in case of no answer
+  		}
+
+  		function Scoring(){
+  			const rates = {"E": 5, "AS": 4, "S": 3, "NI": 2, "PP": 1}
+
+  			var ans1 = document.getElementById('1topic_1').value;
+  			var ans2 = document.getElementById('1topic_2').value;
+  			var ans3 = document.getElementById('1topic_3').value;
+  			var ans4 = document.getElementById('1topic_4').value
+
+
+  			if (ans1 = "Rate_1" || ans2 = "Rate_2" || ans3 = "Rate_3" || ans4 = "Rate_4"){
+				document.getElementById('display1').innerText = "Please pick a rate!";
+        		document.getElementById('display1').classList.add('warning');
+        		return;
+        	}else if (ans1 = "F" || ans2 = "F" || ans3 = "F" || ans4 = "F"){
+  				document.getElementById('display1').innerText = "Please choose an appropriate rate!";
+       	 		document.getElementById('display1').classList.add('warning');
+       	 		return;
+  			}else{
+  				const value = rates[ans1];
+        		const value2 = rates[ans2];
+        		const value3 = rates[ans3];
+        		const value4 = rates[ans4]
+        		const total = Math.pow((value + value2 + value3 + value4),4);
+
+        		alert("Your total rating is " + total);
+        		return;
+  			}
+  		}
+
+  		function Scoring2(){
+  			const ans = document.getElementById('topic_1').value;
+
+  			switch (ans){
+  				case (ans == "1Q"){
+  					alert("The first quarter project is about making an online shopping webpage");
+  					break;
+  				}
+  				case (ans == "2Q"){
+  					alert("The second quarter project is about making an online shopping webpage");
+  					break;
+  				}
+  				case (ans == "3Q"){
+  					alert("The third quarter project is about pairing up to make a train fare webpage");
+  					break;
+  				}
+  				default{
+  					alert("The fourth quarter project is about the grouping up to make a profolio webpage");
+  					break;
+  				}
+  			}
+
+  			return;
+  		}
+
+  		function Submit() {
+  			alert("Thank you for answering our feeback");
+  		}
+  	</script>
+</body>
+</html>
